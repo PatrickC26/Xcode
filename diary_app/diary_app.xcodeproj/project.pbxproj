@@ -1,0 +1,830 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D03C531279ACA2D00464904 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03C530279ACA2D00464904 /* Tests_iOS.swift */; };
+		9D03C533279ACA2D00464904 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03C532279ACA2D00464904 /* Tests_iOSLaunchTests.swift */; };
+		9D03C53D279ACA2D00464904 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03C53C279ACA2D00464904 /* Tests_macOS.swift */; };
+		9D03C53F279ACA2D00464904 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03C53E279ACA2D00464904 /* Tests_macOSLaunchTests.swift */; };
+		9D03C540279ACA2D00464904 /* diary_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03C518279ACA2B00464904 /* diary_appApp.swift */; };
+		9D03C541279ACA2D00464904 /* diary_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03C518279ACA2B00464904 /* diary_appApp.swift */; };
+		9D03C542279ACA2D00464904 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03C519279ACA2B00464904 /* ContentView.swift */; };
+		9D03C543279ACA2D00464904 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03C519279ACA2B00464904 /* ContentView.swift */; };
+		9D03C544279ACA2D00464904 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D03C51A279ACA2D00464904 /* Assets.xcassets */; };
+		9D03C545279ACA2D00464904 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D03C51A279ACA2D00464904 /* Assets.xcassets */; };
+		9D03C556279ACA9100464904 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9D03C555279ACA9100464904 /* FirebaseAuth */; };
+		9D03C558279ACA9200464904 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9D03C557279ACA9200464904 /* FirebaseDatabase */; };
+		9D03C562279ACAE500464904 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 9D03C561279ACAE500464904 /* GoogleSignIn */; };
+		9D03C567279D691700464904 /* loginpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03C566279D691700464904 /* loginpage.swift */; };
+		9D03C568279D691700464904 /* loginpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03C566279D691700464904 /* loginpage.swift */; };
+		9D03C56A279D9F7400464904 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D03C569279D9F7400464904 /* GoogleService-Info.plist */; };
+		9D03C56B279D9F7400464904 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D03C569279D9F7400464904 /* GoogleService-Info.plist */; };
+		9D03C56D279DA04900464904 /* mainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03C56C279DA04900464904 /* mainPage.swift */; };
+		9D03C56E279DA04900464904 /* mainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03C56C279DA04900464904 /* mainPage.swift */; };
+		9D03C571279DC41500464904 /* passwordPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03C570279DC41500464904 /* passwordPage.swift */; };
+		9D03C572279DC41500464904 /* passwordPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03C570279DC41500464904 /* passwordPage.swift */; };
+		9D63EAB227A1305E007CC820 /* calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D63EAB127A1305E007CC820 /* calendar.swift */; };
+		9D63EAB327A1305E007CC820 /* calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D63EAB127A1305E007CC820 /* calendar.swift */; };
+		9D63EAB527A251FD007CC820 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D63EAB427A251FC007CC820 /* Theme.swift */; };
+		9D63EAB627A251FD007CC820 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D63EAB427A251FC007CC820 /* Theme.swift */; };
+		9D63EAB827A25AF2007CC820 /* diaryCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D63EAB727A25AF2007CC820 /* diaryCategory.swift */; };
+		9D63EAB927A25AF2007CC820 /* diaryCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D63EAB727A25AF2007CC820 /* diaryCategory.swift */; };
+		9D8D55C427A4451F0086814F /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8D55C327A4451F0086814F /* extension.swift */; };
+		9D8D55C527A4451F0086814F /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8D55C327A4451F0086814F /* extension.swift */; };
+		9DE3D61327A6385A004009BE /* addDiary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE3D61227A6385A004009BE /* addDiary.swift */; };
+		9DE3D61427A6385A004009BE /* addDiary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE3D61227A6385A004009BE /* addDiary.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D03C52D279ACA2D00464904 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D03C513279ACA2B00464904 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D03C51E279ACA2D00464904;
+			remoteInfo = "diary_app (iOS)";
+		};
+		9D03C539279ACA2D00464904 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D03C513279ACA2B00464904 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D03C524279ACA2D00464904;
+			remoteInfo = "diary_app (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9D03C518279ACA2B00464904 /* diary_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diary_appApp.swift; sourceTree = "<group>"; };
+		9D03C519279ACA2B00464904 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9D03C51A279ACA2D00464904 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D03C51F279ACA2D00464904 /* diary_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diary_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D03C525279ACA2D00464904 /* diary_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diary_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D03C527279ACA2D00464904 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		9D03C52C279ACA2D00464904 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D03C530279ACA2D00464904 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		9D03C532279ACA2D00464904 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		9D03C538279ACA2D00464904 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D03C53C279ACA2D00464904 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		9D03C53E279ACA2D00464904 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		9D03C55F279ACA9600464904 /* diary-app--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "diary-app--iOS--Info.plist"; sourceTree = "<group>"; };
+		9D03C566279D691700464904 /* loginpage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginpage.swift; sourceTree = "<group>"; };
+		9D03C569279D9F7400464904 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9D03C56C279DA04900464904 /* mainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainPage.swift; sourceTree = "<group>"; };
+		9D03C56F279DBF5300464904 /* diary_app (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "diary_app (iOS).entitlements"; sourceTree = "<group>"; };
+		9D03C570279DC41500464904 /* passwordPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = passwordPage.swift; sourceTree = "<group>"; };
+		9D03C573279DC61B00464904 /* diary-app--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "diary-app--macOS--Info.plist"; sourceTree = "<group>"; };
+		9D63EAB127A1305E007CC820 /* calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendar.swift; sourceTree = "<group>"; };
+		9D63EAB427A251FC007CC820 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		9D63EAB727A25AF2007CC820 /* diaryCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diaryCategory.swift; sourceTree = "<group>"; };
+		9D8D55C327A4451F0086814F /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		9DE3D61227A6385A004009BE /* addDiary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addDiary.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D03C51C279ACA2D00464904 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D03C558279ACA9200464904 /* FirebaseDatabase in Frameworks */,
+				9D03C556279ACA9100464904 /* FirebaseAuth in Frameworks */,
+				9D03C562279ACAE500464904 /* GoogleSignIn in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D03C522279ACA2D00464904 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D03C529279ACA2D00464904 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D03C535279ACA2D00464904 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D03C512279ACA2B00464904 = {
+			isa = PBXGroup;
+			children = (
+				9D03C573279DC61B00464904 /* diary-app--macOS--Info.plist */,
+				9D03C56F279DBF5300464904 /* diary_app (iOS).entitlements */,
+				9D03C55F279ACA9600464904 /* diary-app--iOS--Info.plist */,
+				9D03C569279D9F7400464904 /* GoogleService-Info.plist */,
+				9D03C517279ACA2B00464904 /* Shared */,
+				9D03C526279ACA2D00464904 /* macOS */,
+				9D03C52F279ACA2D00464904 /* Tests iOS */,
+				9D03C53B279ACA2D00464904 /* Tests macOS */,
+				9D03C520279ACA2D00464904 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D03C517279ACA2B00464904 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				9D03C518279ACA2B00464904 /* diary_appApp.swift */,
+				9D03C566279D691700464904 /* loginpage.swift */,
+				9D03C519279ACA2B00464904 /* ContentView.swift */,
+				9D63EAB427A251FC007CC820 /* Theme.swift */,
+				9D03C51A279ACA2D00464904 /* Assets.xcassets */,
+				9D63EAB727A25AF2007CC820 /* diaryCategory.swift */,
+				9D03C56C279DA04900464904 /* mainPage.swift */,
+				9D03C570279DC41500464904 /* passwordPage.swift */,
+				9D63EAB127A1305E007CC820 /* calendar.swift */,
+				9D8D55C327A4451F0086814F /* extension.swift */,
+				9DE3D61227A6385A004009BE /* addDiary.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		9D03C520279ACA2D00464904 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D03C51F279ACA2D00464904 /* diary_app.app */,
+				9D03C525279ACA2D00464904 /* diary_app.app */,
+				9D03C52C279ACA2D00464904 /* Tests iOS.xctest */,
+				9D03C538279ACA2D00464904 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D03C526279ACA2D00464904 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				9D03C527279ACA2D00464904 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		9D03C52F279ACA2D00464904 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9D03C530279ACA2D00464904 /* Tests_iOS.swift */,
+				9D03C532279ACA2D00464904 /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		9D03C53B279ACA2D00464904 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				9D03C53C279ACA2D00464904 /* Tests_macOS.swift */,
+				9D03C53E279ACA2D00464904 /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D03C51E279ACA2D00464904 /* diary_app (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D03C548279ACA2D00464904 /* Build configuration list for PBXNativeTarget "diary_app (iOS)" */;
+			buildPhases = (
+				9D03C51B279ACA2D00464904 /* Sources */,
+				9D03C51C279ACA2D00464904 /* Frameworks */,
+				9D03C51D279ACA2D00464904 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "diary_app (iOS)";
+			packageProductDependencies = (
+				9D03C555279ACA9100464904 /* FirebaseAuth */,
+				9D03C557279ACA9200464904 /* FirebaseDatabase */,
+				9D03C561279ACAE500464904 /* GoogleSignIn */,
+			);
+			productName = "diary_app (iOS)";
+			productReference = 9D03C51F279ACA2D00464904 /* diary_app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D03C524279ACA2D00464904 /* diary_app (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D03C54B279ACA2D00464904 /* Build configuration list for PBXNativeTarget "diary_app (macOS)" */;
+			buildPhases = (
+				9D03C521279ACA2D00464904 /* Sources */,
+				9D03C522279ACA2D00464904 /* Frameworks */,
+				9D03C523279ACA2D00464904 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "diary_app (macOS)";
+			productName = "diary_app (macOS)";
+			productReference = 9D03C525279ACA2D00464904 /* diary_app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D03C52B279ACA2D00464904 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D03C54E279ACA2D00464904 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				9D03C528279ACA2D00464904 /* Sources */,
+				9D03C529279ACA2D00464904 /* Frameworks */,
+				9D03C52A279ACA2D00464904 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D03C52E279ACA2D00464904 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 9D03C52C279ACA2D00464904 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		9D03C537279ACA2D00464904 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D03C551279ACA2D00464904 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				9D03C534279ACA2D00464904 /* Sources */,
+				9D03C535279ACA2D00464904 /* Frameworks */,
+				9D03C536279ACA2D00464904 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D03C53A279ACA2D00464904 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 9D03C538279ACA2D00464904 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D03C513279ACA2B00464904 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					9D03C51E279ACA2D00464904 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					9D03C524279ACA2D00464904 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					9D03C52B279ACA2D00464904 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 9D03C51E279ACA2D00464904;
+					};
+					9D03C537279ACA2D00464904 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 9D03C524279ACA2D00464904;
+					};
+				};
+			};
+			buildConfigurationList = 9D03C516279ACA2B00464904 /* Build configuration list for PBXProject "diary_app" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D03C512279ACA2B00464904;
+			packageReferences = (
+				9D03C554279ACA9100464904 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				9D03C560279ACAE500464904 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			productRefGroup = 9D03C520279ACA2D00464904 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D03C51E279ACA2D00464904 /* diary_app (iOS) */,
+				9D03C524279ACA2D00464904 /* diary_app (macOS) */,
+				9D03C52B279ACA2D00464904 /* Tests iOS */,
+				9D03C537279ACA2D00464904 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D03C51D279ACA2D00464904 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D03C544279ACA2D00464904 /* Assets.xcassets in Resources */,
+				9D03C56A279D9F7400464904 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D03C523279ACA2D00464904 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D03C545279ACA2D00464904 /* Assets.xcassets in Resources */,
+				9D03C56B279D9F7400464904 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D03C52A279ACA2D00464904 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D03C536279ACA2D00464904 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D03C51B279ACA2D00464904 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D03C542279ACA2D00464904 /* ContentView.swift in Sources */,
+				9D03C540279ACA2D00464904 /* diary_appApp.swift in Sources */,
+				9D03C567279D691700464904 /* loginpage.swift in Sources */,
+				9D8D55C427A4451F0086814F /* extension.swift in Sources */,
+				9D63EAB227A1305E007CC820 /* calendar.swift in Sources */,
+				9D03C56D279DA04900464904 /* mainPage.swift in Sources */,
+				9D63EAB827A25AF2007CC820 /* diaryCategory.swift in Sources */,
+				9D03C571279DC41500464904 /* passwordPage.swift in Sources */,
+				9D63EAB527A251FD007CC820 /* Theme.swift in Sources */,
+				9DE3D61327A6385A004009BE /* addDiary.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D03C521279ACA2D00464904 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D03C543279ACA2D00464904 /* ContentView.swift in Sources */,
+				9D03C541279ACA2D00464904 /* diary_appApp.swift in Sources */,
+				9D03C568279D691700464904 /* loginpage.swift in Sources */,
+				9D8D55C527A4451F0086814F /* extension.swift in Sources */,
+				9D63EAB327A1305E007CC820 /* calendar.swift in Sources */,
+				9D03C56E279DA04900464904 /* mainPage.swift in Sources */,
+				9D63EAB927A25AF2007CC820 /* diaryCategory.swift in Sources */,
+				9D03C572279DC41500464904 /* passwordPage.swift in Sources */,
+				9D63EAB627A251FD007CC820 /* Theme.swift in Sources */,
+				9DE3D61427A6385A004009BE /* addDiary.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D03C528279ACA2D00464904 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D03C533279ACA2D00464904 /* Tests_iOSLaunchTests.swift in Sources */,
+				9D03C531279ACA2D00464904 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D03C534279ACA2D00464904 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D03C53F279ACA2D00464904 /* Tests_macOSLaunchTests.swift in Sources */,
+				9D03C53D279ACA2D00464904 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D03C52E279ACA2D00464904 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D03C51E279ACA2D00464904 /* diary_app (iOS) */;
+			targetProxy = 9D03C52D279ACA2D00464904 /* PBXContainerItemProxy */;
+		};
+		9D03C53A279ACA2D00464904 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D03C524279ACA2D00464904 /* diary_app (macOS) */;
+			targetProxy = 9D03C539279ACA2D00464904 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9D03C546279ACA2D00464904 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D03C547279ACA2D00464904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		9D03C549279ACA2D00464904 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "diary_app (iOS).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = a;
+				DEVELOPMENT_TEAM = ABA2JA7XJ2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "diary-app--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Diary App";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.1.20220211;
+				PRODUCT_BUNDLE_IDENTIFIER = "Sloths.diary-app";
+				PRODUCT_NAME = diary_app;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D03C54A279ACA2D00464904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "diary_app (iOS).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = a;
+				DEVELOPMENT_TEAM = ABA2JA7XJ2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "diary-app--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Diary App";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.1.20220211;
+				PRODUCT_BUNDLE_IDENTIFIER = "Sloths.diary-app";
+				PRODUCT_NAME = diary_app;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D03C54C279ACA2D00464904 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ABA2JA7XJ2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "diary-app--macOS--Info.plist";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Sloths.diary-app";
+				PRODUCT_NAME = diary_app;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9D03C54D279ACA2D00464904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ABA2JA7XJ2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "diary-app--macOS--Info.plist";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Sloths.diary-app";
+				PRODUCT_NAME = diary_app;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9D03C54F279ACA2D00464904 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ABA2JA7XJ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Sloths.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "diary_app (iOS)";
+			};
+			name = Debug;
+		};
+		9D03C550279ACA2D00464904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ABA2JA7XJ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Sloths.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "diary_app (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D03C552279ACA2D00464904 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ABA2JA7XJ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Sloths.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "diary_app (macOS)";
+			};
+			name = Debug;
+		};
+		9D03C553279ACA2D00464904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ABA2JA7XJ2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Sloths.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "diary_app (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D03C516279ACA2B00464904 /* Build configuration list for PBXProject "diary_app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D03C546279ACA2D00464904 /* Debug */,
+				9D03C547279ACA2D00464904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D03C548279ACA2D00464904 /* Build configuration list for PBXNativeTarget "diary_app (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D03C549279ACA2D00464904 /* Debug */,
+				9D03C54A279ACA2D00464904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D03C54B279ACA2D00464904 /* Build configuration list for PBXNativeTarget "diary_app (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D03C54C279ACA2D00464904 /* Debug */,
+				9D03C54D279ACA2D00464904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D03C54E279ACA2D00464904 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D03C54F279ACA2D00464904 /* Debug */,
+				9D03C550279ACA2D00464904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D03C551279ACA2D00464904 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D03C552279ACA2D00464904 /* Debug */,
+				9D03C553279ACA2D00464904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9D03C554279ACA9100464904 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		9D03C560279ACAE500464904 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9D03C555279ACA9100464904 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D03C554279ACA9100464904 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		9D03C557279ACA9200464904 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D03C554279ACA9100464904 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		9D03C561279ACAE500464904 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D03C560279ACAE500464904 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9D03C513279ACA2B00464904 /* Project object */;
+}
